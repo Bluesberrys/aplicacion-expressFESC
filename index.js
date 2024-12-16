@@ -67,19 +67,6 @@ app.post('/agrega_todo', jsonParser, (req, res) => {
     });
 });
 
-// Endpoint para listar todos
-app.get('/lista_todos', (req, res) => {
-    db.all('SELECT * FROM todos ORDER BY created_at DESC', (err, rows) => {
-        if (err) {
-            return res.status(500).json({ 
-                error: 'Error al recuperar tareas', 
-                message: err.message 
-            });
-        }
-        res.status(200).json(rows);
-    });
-});
-
 // Nuevo endpoint para listar todos los elementos
 app.get('/obtener_todos', (req, res) => {
     // Comando SELECT para obtener todos los elementos
