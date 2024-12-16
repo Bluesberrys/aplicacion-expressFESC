@@ -1,16 +1,22 @@
 {
-  "name": "actividad-10",
+  "name": "aplicacion-expressfesc",
   "version": "1.0.0",
-  "description": "",
+  "description": "* Copien los archivos index.js, .gitignore y package.json a este nuevo repositorio. * Asegúrense de realizarlo en la rama main.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": "^0.76.5",
     "sqlite3": "^5.1.7"
   }
 }
