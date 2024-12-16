@@ -63,7 +63,7 @@ app.post('/agrega_todo', jsonParser, (req, res) => {
         stmt.finalize();
 
         // Responder con estado 201 y un JSON vacío
-        res.status(201).json({});
+        res.status(201).json({"Status": 201});
     });
 });
 
